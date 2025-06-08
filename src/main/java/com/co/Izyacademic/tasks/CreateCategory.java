@@ -23,7 +23,7 @@ public class CreateCategory implements Task {
                 Click.on(Categorypage.BTN_POSTS_),
 
                 SelectFromOptions.byVisibleText("Create Category").from(Categorypage.BTN_SELECTACTION),
-                Enter.theValue("Automatización").into(Categorypage.TXT_CATEGORYNAME),
+                Enter.theValue("Automatización Pruebas Screenplay").into(Categorypage.TXT_CATEGORYNAME),
                 Enter.theValue("Cursos Automatización").into(Categorypage.TXT_CATEGORYDESCRIPTION),
                 Click.on(Categorypage.BTN_DIFFICULSELECT),
                 Click.on(Categorypage.BTN_CREAR)

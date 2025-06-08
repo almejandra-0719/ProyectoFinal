@@ -1,6 +1,7 @@
 package com.co.izyacademic.stepsdefinitions;
 
 import com.co.Izyacademic.models.Datauser;
+import com.co.Izyacademic.questions.ValidationCategory;
 import com.co.Izyacademic.questions.ValidationUser;
 import com.co.Izyacademic.tasks.CreateCategory;
 import com.co.Izyacademic.tasks.Registration;
@@ -45,6 +46,7 @@ public class RegistrationStepDefinition {
     @Then("user should be able to create a new category for a course")
     public void userShouldBeAbleToCreateANewCategoryForACourse() {
         OnStage.theActorInTheSpotlight().attemptsTo(CreateCategory.enter());
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidationCategory.compare()
+                ,Matchers.is("Automatización Pruebas Screenplay")));
     }
 }

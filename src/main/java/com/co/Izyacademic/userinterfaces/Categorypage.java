@@ -26,4 +26,7 @@ public class Categorypage {
 
     public static final Target BTN_CREAR = Target.the("Button crear")
             .locatedBy("//button[@id='effect-button']");
+
+    public static final Target TXT_CATEGORYCONFIRM_ = Target.the("Text confirmed box")
+            .locatedBy("//h3[contains(text(),'Automatización Pruebas Screenplay')]");
 }
