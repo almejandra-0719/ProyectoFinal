@@ -2,27 +2,30 @@ package com.co.Izyacademic.models;
 
 public class Datauser {
 
+
     private String name;
     private String username;
+    private String country;
     private String city;
+    private String idnumber;
+    private String phone;
+    private String email;
+    private String password;
 
-    public Datauser(String name, String username, String city, Double identification, Double phone, String email, String password) {
+
+    public Datauser(String name, String username, String country, String city, String idnumber, String phone, String email, String password) {
         this.name = name;
         this.username = username;
+        this.country = country;
         this.city = city;
-        this.identification = identification;
+        this.idnumber = idnumber;
         this.phone = phone;
         this.email = email;
         this.password = password;
     }
 
-    private Double identification;
 
-    private Double phone;
 
-    private String email;
-
-    private String password;
 
     public String getName() {
         return name;
@@ -40,6 +43,14 @@ public class Datauser {
         this.username = username;
     }
 
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
     public String getCity() {
         return city;
     }
@@ -48,19 +59,19 @@ public class Datauser {
         this.city = city;
     }
 
-    public Double getIdentification() {
-        return identification;
+    public String getIdnumber() {
+        return idnumber;
     }
 
-    public void setIdentification(Double identification) {
-        this.identification = identification;
+    public void setIdnumber(String idnumber) {
+        this.idnumber = idnumber;
     }
 
-    public Double getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Double phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -83,6 +94,7 @@ public class Datauser {
 
 
 
+    }
 
 
 
@@ -90,4 +102,12 @@ public class Datauser {
 
 
 
-}
+
+
+
+
+
+
+
+
+
